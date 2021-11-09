@@ -1,5 +1,10 @@
 { "Name":"ALEXA",
   "age":24,
   "number of pets":2,
-  "future desired salary":5000$
+  "future desired salary":5000$,
+ "Film":"Avengers",
+"Serial":"Squid game",
+"Food":"borsch",
+"time of the year":"Summer",
+"Country":"Tailand",
 }

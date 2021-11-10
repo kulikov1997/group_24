@@ -1,0 +1,117 @@
+DZ 1
+[
+    "ALEKSEY",
+    "24"
+]
+
+DZ 2
+
+{
+    "age": "24",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "u_salary_1_5_year": 20000
+    },
+    "name": "ALEKSEY",
+    "salary": 5000
+}
+
+DZ 3
+
+{
+    "age": 24,
+    "daily_food": 0.96,
+    "daily_sleep": 200.0,
+    "name": "ALeksey"
+}
+
+DZ 4
+
+{
+    "person": {
+        "u_age": 24,
+        "u_name": [
+            "ALEKSEY",
+            5000,
+            24
+        ],
+        "u_salary_5_years": 21000.0
+    },
+    "qa_salary_after_1.5_year": 16500.0,
+    "qa_salary_after_12_months": 13500.0,
+    "qa_salary_after_3.5_years": 19000.0,
+    "qa_salary_after_6_months": 10000,
+    "start_qa_salary": 5000
+}
+
+DZ 5
+
+{
+    "age": "24",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "pets": {
+            "cat": {
+                "age": 3,
+                "name": "Sunny"
+            },
+            "dog": {
+                "age": 4,
+                "name": "Luky"
+            }
+        },
+        "u_salary_1_5_year": 20000
+    },
+    "name": "ALeksey",
+    "salary": 5000
+}
+
+DZ 6
+
+{
+    "age": 24,
+    "name": "Aleksey",
+    "salary": [
+        5000,
+        "10000",
+        "15000"
+    ]
+}
+
+DZ 7
+
+{
+    "person": {
+        "u_age": 24,
+        "u_name": [
+            "Aleksey",
+            5000,
+            24
+        ],
+        "u_salary_5_years": 21000.0
+    },
+    "qa_salary_after_1.5_year": 16500.0,
+    "qa_salary_after_12_months": 13500.0,
+    "qa_salary_after_3.5_years": 19000.0,
+    "qa_salary_after_6_months": 10000,
+    "start_qa_salary": 5000
+}
+

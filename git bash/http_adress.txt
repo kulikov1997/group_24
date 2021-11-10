@@ -1,0 +1,6 @@
+/d/practic_gitbash/dir_1
+$ curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   185  100   185    0     0   1864      0 --:--:-- --:--:-- --:--:--  1907{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+

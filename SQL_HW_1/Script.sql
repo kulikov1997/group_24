@@ -21,7 +21,7 @@ select * from students where name like '%Анна%';
 --11. Вывести пользователей где в имени в конце есть 8
 select * from students where name LIKE '%8';
 --12. Вывести пользователей где в имени  есть буква а
-select * from students where name like '%a%';
+select * from students where name like '%а%';
 -- 13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
 select * from students where created_on='2021-07-12 00:00:00';
 --14. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313

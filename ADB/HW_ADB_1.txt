@@ -14,7 +14,7 @@
 
  4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
 
-./adb shell screencap storage/emulated/0/DCIM/group_22.png | ./adb pull storage/emulated/0/DCIM/group_22.png D:/image/group_22.png
+./adb shell screencap storage/emulated/0/DCIM/group_24.png | ./adb pull storage/emulated/0/DCIM/group_24.png D:/image/group_24.png
 
  5. Вывести в консоль логи приложения todolist
 

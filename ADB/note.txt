@@ -17,12 +17,12 @@ cd C:/Users/Cherv/AppData/Local/Android/Sdk/platform-tools
 
 ./adb uninstall com.android.todolist - удаление приложения
 
-./adb shell screencap storage/emulated/0/DCIM/group_22.png - делаем скриншот на телефон
+./adb shell screencap storage/emulated/0/DCIM/group_24.png - делаем скриншот на телефон
 
-./adb pull storage/emulated/0/DCIM/group_22.png D:/image/group_22.png - заливаем картинку на комп с телефона прописываем 
+./adb pull storage/emulated/0/DCIM/group_24.png D:/image/group_24.png - заливаем картинку на комп с телефона прописываем 
 путь на телефоне на комп  
 
-./adb push D:/image/java/12.jpg /storage/emulated/0/DCIM/group_22_1.jpg - с компа на телефон
+./adb push D:/image/java/12.jpg /storage/emulated/0/DCIM/group_24_1.jpg - с компа на телефон
 
 ./adb logcat - вывод логов
 Ctrl + C

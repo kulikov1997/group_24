@@ -9,7 +9,7 @@
 while True:
     money = int(input('Input money:'))
     print("Ты ввел", money, 'RUB')
-    print("конвертированная сумма в USD =", money/100)
+    print("конвертированная сумма в USD =", int(money / 75))
     break
 
 # Задача №2
@@ -27,25 +27,26 @@ while True:
 
 while True:
     money = int(input('Input money:'))
-    print("Ты ввел", money, 'BGN')
-    print("Конвертированная сумма в USD: ", money/100)
-    print("Конвертированная сумма в EUR: ", money/120)
-    print("Конвертированная сумма в CHF: ", money/130)
-    print("Конвертированная сумма в GBP: ", money/140)
-    print("Конвертированная сумма в CNY: ", money/150)
+    print("Ты ввел", money, 'RUB')
+    print("Конвертированная сумма в USD: ", int(money / 75))
+    print("Конвертированная сумма в EUR: ", int(money / 90))
+    print("Конвертированная сумма в CHF: ", int(money / 83))
+    print("Конвертированная сумма в GBP: ", int(money / 104))
+    print("Конвертированная сумма в CNY: ", int(money / 12))
     break
 
     print("==========")
 
+
 def main():
     money = get_money()
     usd_money = exchange(money)
-    print("Ты ввёл int:", money, "BGN")
-    print("Конвертированная сумма в USD: ", usd_money[0])
-    print("Конвертированная сумма в EUR: ", usd_money[1])
-    print("Конвертированная сумма в CHF: ", usd_money[2])
-    print("Конвертированная сумма в GBP: ", usd_money[3])
-    print("Конвертированная сумма в CNY: ", usd_money[4])
+    print("Ты ввёл int:", money, "RUB")
+    print("Конвертированная сумма в USD: ", int(usd_money[0]))
+    print("Конвертированная сумма в EUR: ", int(usd_money[1]))
+    print("Конвертированная сумма в CHF: ", int(usd_money[2]))
+    print("Конвертированная сумма в GBP: ", int(usd_money[3]))
+    print("Конвертированная сумма в CNY: ", int(usd_money[4]))
 
 
 def get_money():
@@ -54,12 +55,12 @@ def get_money():
 
 
 def exchange(money):
-    BGN_list = []
-    BGN_to_list = [100, 135, 150, 160, 175]
+    RUB_list = []
+    RUB_to_list = [75, 90, 83, 104, 12]
 
-    for i in range(len(BGN_to_list)):
-        BGN_list.append(int(money) / BGN_to_list[i])
-    return BGN_list
+    for i in range(len(RUB_to_list)):
+        RUB_list.append(int(money) / RUB_to_list[i])
+    return RUB_list
 
 
 main()
@@ -83,7 +84,7 @@ main()
 
 while True:
 
-    input_data = input("Введите новое число: ")
+    input_data = input("Ввести новое число: ")
 
     if len(input_data) == 0:
         print("Вы ввели пустое поле. Введите число.")
@@ -93,15 +94,16 @@ while True:
                 print("Введите положительное число.")
             else:
                 money = int(input('Input money:'))
-                print("Ты ввел", money, 'BGN')
-                print("Конвертированная сумма в USD: ", money / 100)
-                print("Конвертированная сумма в EUR: ", money / 120)
-                print("Конвертированная сумма в CHF: ", money / 130)
-                print("Конвертированная сумма в GBP: ", money / 140)
-                print("Конвертированная сумма в CNY: ", money / 150)
+                print("Ты ввел", money, 'RUB')
+                print("Конвертированная сумма в USD: ", int(money / 75))
+                print("Конвертированная сумма в EUR: ", int(money / 90))
+                print("Конвертированная сумма в CHF: ", int(money / 83))
+                print("Конвертированная сумма в GBP: ", int(money / 104))
+                print("Конвертированная сумма в CNY: ", int(money / 12))
                 break
         except ValueError:
             print("Вы ввели не число. Введите число.")
+
 
 # Задача №4
 # Обменник. Скрипт запускается в консоли и работает постоянно. Остановится нажатием ctrl+c.
@@ -123,11 +125,11 @@ while True:
 def count_m(money, val):
     input_money = 0
     key = ['USD', 'EUR', 'CHF', 'GBP', 'CNY']
-    value = [23, 40, 50, 65, 70]
+    value = [75, 90, 83, 104, 12]
 
     for i in range(len(key)):
         if val == key[i]:
-            input_money = int(money)/value[i]
+            input_money = int(money) / value[i]
         else:
             continue
     return input_money
@@ -147,7 +149,7 @@ while True:
             else:
                 usd_money = count_m(input_sum, input_key)
                 print("Вы ввели сумму ", input_sum, " и валюту ", input_key)
-                print("конвертированная сумма в ", input_key, " = ", usd_money)
+                print("конвертированная сумма в ", input_key, " = ", int(usd_money))
         except ValueError:
             print("Вы ввели не число. Введите число.")
 
